@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Media Queries</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+
+        <style>
+            .container {
+                width: 80%;
+                background-color: bisque;
+                padding: 5%;
+                margin: auto;
+            }
+            h1,
+            h2,
+            h3 {
+                display: none;
+            }
+            /* Mobile */
+            @media screen and (min-width: 320px) {
+                h3 {
+                    display: block;
+                }
+            }
+            /* Tablet   */
+            @media screen and (min-width: 480px) {
+                h2 {
+                    display: block;
+                }
+            }
+            /* Desktop  */
+            @media screen and (min-width: 500px) {
+                h1 {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Simple Heading - Big screen</h1>
+            <h2>Simple heading - Medium screen</h2>
+            <h3>Simple Heading - Small screen</h3>
+        </div>
+    </body>
+</html>
